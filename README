@@ -1,0 +1,50 @@
+# Flask Blog Application
+
+A simple blog application built with Flask.
+
+## Features
+
+- CRUD operations for blog posts, categories, tags, and comments
+- RESTful APIs for retrieving and managing blog data
+- Docker containerization for deployment
+
+## Requirements
+
+- Python 3.11
+- Flask
+- SQLAlchemy
+- Flask-Migrate
+- Other dependencies listed in requirements.txt
+
+## Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <this repo>
+   cd repository-name
+
+2. Setup Virtual Environment
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+
+3. Set up Database:
+     Ensure you have PostgreSQL installed and running.
+     Update config.py with your database credentials.
+
+4. Docker Deployment
+    - Build Docker images:
+    ```bash
+     docker-compose build
+
+    - Start containers:
+    ```bash
+     docker-compose up
+
+
+5.Access the API:
+
+    By default, the API can be accessed at  http://127.0.0.1:5000.
+
